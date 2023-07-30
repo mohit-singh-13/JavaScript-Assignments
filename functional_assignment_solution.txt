@@ -54,7 +54,8 @@ employees.sort((a, b) =>
 
 //using 'filter'
 var employees = [{name:"Mohit", salary:10000}, {name:"Ajay", salary:5000}, {name:"Rahul", salary:25000}, {name:"Nikhil", salary:30000}, {name:"Hanumant", salary:9000}, {name:"Ayush", salary:13000}, {name:"Vineet", salary:7500}];
-var newEmployees = employees.map(e => ({name:"e.name", salary:e.salary + ((e.salary*10)/100)}));
+var newEmployees = employees.filter(e => true);
+newEmployees.forEach(e => e.salary =  e.salary + ((e.salary*10)/100));
 newEmployees.forEach(e => console.log(e));
 
 //using map
